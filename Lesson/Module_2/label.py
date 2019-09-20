@@ -19,16 +19,21 @@ label2.pack()
 
 label3 = tkinter.Label(
     window,
-    text="You can make text bigger",
-    font=("Courier", 50)
+    text="You can also set border and padding",
+    borderwidth=4,
+    relief='solid',
+    padx=20,
+    pady=20
 )
 label3.pack()
 
 label4 = tkinter.Label(
     window,
-    text="You can also set text align and border",
-    anchor="e",
+    text="You can make text bigger",
+    font=("Courier", 50),
+    bg="gray"
 )
-label4.pack(fill='x')
+label4.pack()
+
 
 window.mainloop()
