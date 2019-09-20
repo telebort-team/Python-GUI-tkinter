@@ -1,7 +1,7 @@
 import tkinter
 
 window = tkinter.Tk()
-window.title("GUI")
+window.title("Learn Label")
 
 label1 = tkinter.Label(window, text="Welcome to Telebort")
 label1.pack()
@@ -20,7 +20,7 @@ label2.pack()
 label3 = tkinter.Label(
     window,
     text="You can also set border and padding",
-    borderwidth=4,
+    bd=4,
     relief='solid',
     padx=20,
     pady=20
@@ -34,6 +34,5 @@ label4 = tkinter.Label(
     bg="gray"
 )
 label4.pack()
-
 
 window.mainloop()
